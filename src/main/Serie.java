@@ -20,7 +20,8 @@ public class Serie
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Serie{" +
                 "nome='" + nome + '\'' +
                 ", plataforma='" + plataforma + '\'' +
@@ -48,8 +49,12 @@ public class Serie
         return nota;
     }
 
-    public void setNota(double nota) {
-        if(nota >= 0 && nota <= 10)
+    public boolean setNota(double nota) {
+        if (nota >= 0 && nota <= 10)
+        {
             this.nota = nota;
+            return true;
+        }
+        return false;
     }
 }
