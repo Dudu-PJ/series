@@ -4,7 +4,12 @@ import java.util.ArrayList;
 
 public class Catalogo
 {
-    private ArrayList<Serie> series = new ArrayList<>();
+    private ArrayList<Serie> series;
+
+    public Catalogo()
+    {
+        this.series = new ArrayList<>();
+    }
 
     public void addSerie(Serie serie)
     {
